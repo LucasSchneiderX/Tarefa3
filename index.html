@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tarefa 3</title>
+    <script>
+        const main = () => {
+            console.log("Some JavaScript Code...");
+        };
+
+        // wait for five-server to connect
+        const five = document.querySelector('[data-id="five-server"]');
+        if (five) five.addEventListener("connected", main);
+        else window.addEventListener("load", main);
+    </script>
+</head>
+
+<body>
+    <section class="header">
+        <div class="logo-container">
+            <div>
+                <img src="assets/logo.png" alt="logo">
+            </div>
+            <div class="titulo">
+                <h1>Cozinha cheia</h1>
+                <h3>Blog culinário</h3>
+            </div>
+        </div>
+        <div class="menu">
+            <div id="opcoes">
+                <a href="#">Receitas</a>
+                <a href="#">Videos</a>
+                <a href="#">Loja</a>
+            </div>
+            <div id="campo_busca">
+                <input id="input-pesquisa" type="text" placeholder="Pesquisar">
+                <img id="icon_lupa" src="assets/lupa.png" alt="icone lupa">
+            </div>
+        </div>
+    </section>
+    <section class="conteudo">
+        <div class="container-post">
+            <img src="assets/img1.jpg" alt="Imagem 1">
+            <div class="textContainer">
+                <h2>Joao Francisco</h2>
+                <h1>Receitas do dia-a-dia</h1>
+                <span>
+                    A correria do dia a dia não precisa ser um obstáculo para comer bem. Em nosso blog, vamos
+                    compartilhar receitas rápidas e fáceis que se encaixam perfeitamente na sua rotina. Com ingredientes
+                    acessíveis e métodos descomplicados, você vai aprender a preparar refeições deliciosas em minutos.
+                </span>
+            </div>
+        </div>
+        <div class="container-post">
+            <img src="assets/img2.jpg" alt="Imagem 1">
+            <div class="textContainer">
+                <h2>Renata</h2>
+                <h1>Viagem Culinária</h1>
+                <span>
+                    Você está pronto para embarcar em uma aventura culinária ao redor do mundo? Em nosso blog, vamos
+                    explorar receitas autênticas de diferentes culturas e regiões. Desde o tempero exótico da Índia até
+                    os sabores frescos do Mediterrâneo, cada postagem será uma nova descoberta. 
+                </span>
+            </div>
+        </div>
+        <div class="container-post">
+            <img src="assets/img3.jpg" alt="Imagem 1">
+            <div class="textContainer">
+                <h2>João Francisco</h2>
+                <h1>Cozinha Organizada</h1>
+                <span>
+                    Manter a cozinha organizada não só facilita o processo de cozinhar, mas também economiza tempo e
+                    reduz o estresse. Neste espaço, vamos compartilhar dicas valiosas para organizar seus utensílios, 
+                    otimizar o espaço e criar um ambiente harmonioso. 
+                </span>
+            </div>
+        </div>
+        <div class="container-post">
+            <img src="assets/img4.jpg" alt="Imagem 4">
+            <div class="textContainer">
+                <h2>Renata</h2>
+                <h1>Doces e Sobremesas</h1>
+                <span>
+                    Vamos mergulhar no mundo das sobremesas e explorar receitas que vão desde os clássicos até as
+                    inovações mais criativas. Seja você um fã de bolos, tortas, ou sobremesas geladas, aqui você vai
+                    encontrar inspiração para criar delícias que encantam a todos.
+                </span>
+            </div>
+        </div>
+        <div class="container-post">
+            <img src="assets/img5.jpg" alt="Imagem 1">
+            <div class="textContainer">
+                <h2>Renata</h2>
+                <h1>Gastronomia Saudável</h1>
+                <span>
+                    Alimentar-se bem é essencial para uma vida saudável e equilibrada. Com receitas nutritivas e dicas
+                    de alimentação consciente, você vai aprender a preparar pratos que são bons para o corpo e para a
+                    alma.
+                </span>
+            </div>
+        </div>
+        <div class="container-post">
+            <img src="assets/img6.jpg" alt="Imagem 1">
+            <div class="textContainer">
+                <h2>João Francisco</h2>
+                <h1>Sabores Caseiros</h1>
+                <span>
+                    Aqui, vamos explorar receitas que trazem a magia dos sabores caseiros para a sua cozinha. Se você
+                    é um cozinheiro de primeira viagem ou um chef experiente, nossas dicas e truques vão inspirar você a
+                    criar pratos deliciosos e memoráveis. 
+                </span>
+            </div>
+        </div>
+    </section>
+</body>
+<footer>
+    <section class="footer">
+        <div>
+            <span id="copyright">&copy 2024</span>
+        </div>
+
+        <div class="social_media">
+            <div>
+                <span>Sigam nossas redes sociais</span>
+            </div>
+            <div class="logos">
+                <a href="#" id="insta"><img src="./assets/insta.png" alt="Logo Instagran"></a>
+                <a href="#"><img src="./assets/facebook.png" alt="Logo Facebook"></a>
+                <a href="#"><img src="./assets/youtube.png" alt="Logo YouTube"></a>
+            </div>
+        </div>
+    </section>
+</footer>
+
+</html>

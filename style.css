@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Seymour+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=REM:ital,wght@0,100..900;1,100..900&family=Seymour+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: white;
+    font-family: "REM", sans-serif;
+
+    & buttom{
+        cursor: pointer;
+    }
+}
+
+.header{
+    background-color: rgb(5, 5, 5);
+    height: 20%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 1rem;
+
+    & img{
+        height: 7rem;
+    }
+}
+
+.logo-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 2rem;
+}
+
+.titulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 2rem;
+
+    & h1{
+        font-family: "Seymour One", sans-serif;
+        font-size: 20px;
+    }
+}
+
+.menu{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: 2rem;
+
+    & a{
+        color: white;
+        font-weight: 700;
+        letter-spacing: 0.1rem;
+    }
+    & a:hover{
+        color: rgb(255, 163, 88);
+    }
+}
+
+#campo_busca{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.5rem;
+}
+
+#opcoes{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 6rem;
+
+    & a{
+        text-align: center;
+    }
+}
+
+#input-pesquisa{
+    padding: 0.5rem;
+    height: 2.3rem;
+    border: none;
+    border-radius: 10px;
+    color: black;
+    background-color: aliceblue;
+    outline: none;
+}
+
+#icon_lupa{
+    height: 2rem;
+    cursor: pointer;
+}
+
+.conteudo{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    padding: 2rem;
+
+    & img{
+        width: 100%;
+    }
+    
+    & h1{
+        color: black;
+    }
+
+    & h2{
+        color: black;
+    }
+
+    & span{
+        color: black;
+    }
+}
+
+.container-post{
+    display: flex;
+    flex-direction: column;
+    max-width: 35rem;
+    min-height: 35rem;
+    border: 1px solid rgb(201, 196, 196);
+    border-radius: 1%;
+    box-shadow: 1px 1px 10px rgb(199, 198, 198);
+    cursor: pointer;
+    transform: scale(1);
+    transition: 1s;
+}
+
+.container-post:hover{
+    transform: scale(1.1);
+}
+
+.textContainer{
+    height: 100%;
+    padding: 1rem;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    & h1{
+        font-weight: 500;
+        letter-spacing: 0.1rem;
+    }
+
+    & h2{
+        font-size: 1.2rem;
+        font-weight: 300;
+        letter-spacing: 0.2rem;
+    }
+
+    & span{
+        word-spacing: 0.1em; 
+        letter-spacing: 0.05em; 
+        white-space: normal; 
+    }
+}
+
+.social_media{
+    display: flex;
+    align-items: center;
+
+    img{
+        max-width: 3rem;
+    }
+}
+
+.logos{
+    display: flex;
+    align-items: center;
+}
+
+#insta{
+    img{
+        max-width: 3.2rem;
+    }
+}
+
+.footer{
+    min-height: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    background-color: rgb(5, 5, 5);
+}
+
+#copyright{
+    font-weight: 150;
+}
+@media screen and (max-width:1085px) {
+    .header{
+        grid-template-columns: auto;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .logo-container{
+        justify-content: center;
+        padding: 0;
+    }
+    
+    .conteudo{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .textContainer{
+
+        & h1{
+            font-size: 1.3rem;
+            font-weight: 500;
+            letter-spacing: 0.1rem;
+        }
+    
+        & h2{
+            font-size: 1.2rem;
+            font-weight: 300;
+            letter-spacing: 0.2rem;
+        }
+    
+        & span{
+            word-spacing: 0.1rem;
+        }
+    }
+}
+
+@media screen and (max-width:770px) {
+    .conteudo{
+        grid-template-columns: auto;
+        justify-content: center;
+    }
+
+    #input-pesquisa{
+        padding: 0.5rem;
+        height: 2rem;
+        border: none;
+        border-radius: 10px;
+        color: black;
+        background-color: aliceblue;
+        outline: none;
+    }
+
+    #opcoes{
+        gap: 3rem;
+    }
+    
+    #icon_lupa{
+        height: 1.7rem;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .menu{
+        grid-template-columns: 1fr;
+    }
+
+    #campo_busca{
+        & input{
+            width: 100%;
+        }
+    }
+
+    .titulo{
+        margin-left: 0;
+    }
+
+    .footer{
+        flex-direction: column;
+        gap: 0;
+    }
+}
